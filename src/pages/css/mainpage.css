@@ -4,4 +4,91 @@
   background-image: url("../../../images/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.brightness {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.493);
+}
+.logo {
+  color: white;
+  position: fixed;
+  top: 16px;
+  left: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.content {
+  height: 50vh;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  max-width: 60%;
+}
+.text * {
+  margin: 0;
+}
+.image {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar {
+  max-width: 70%;
+  border-radius: 50%;
+  border: 2px solid #7b35c2;
+}
+.hello {
+  padding: 0;
+  color: rgb(189, 189, 189);
+  font-size: 18px;
+  transform: translateY(100%);
+  margin-left: 4px;
+}
+.name {
+  font-size: 6vw;
+  padding: 0;
+  background: linear-gradient(to right, #8c41ec, #6fb6fd);
+  background-clip: text;
+  color: transparent;
+}
+.desc {
+  font-weight: 300;
+  transform: translateY(-10px);
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-left: 4px;
+  max-width: 60%;
+}
+.stunning {
+  background: linear-gradient(to right, #df70ba, #7130c3);
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0 10px;
+}
+.star {
+  width: 15px;
+  position: absolute;
+}
+@media (max-width: 1000px) {
+  .name {
+    font-size: 8vw;
+  }
+  .avatar {
+    max-width: 90%;
+  }
 }

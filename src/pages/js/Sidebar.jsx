@@ -7,14 +7,16 @@ const variants = {
   open: {
     clipPath: "circle(1200px at calc(100% - 50px) 50px)",
     transition: {
+      duration: 3,
       type: "spring",
       easing: "easeOut",
     },
   },
   closed: {
-    clipPath: "circle(30px at calc(100% - 90px) 70px)",
+    clipPath: "circle(30px at calc(100% - 60px) 60px)",
     transition: {
-      delay: 0.3,
+      duration: 0.8,
+      // delay: 0.3,
       easing: "easeOut",
     },
   },

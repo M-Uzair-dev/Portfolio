@@ -15,6 +15,11 @@
   width: 400px;
   background: #692abb;
 }
+@media (max-width: 400px) {
+  .bg {
+    width: 100vw;
+  }
+}
 .links {
   position: absolute;
   width: 100%;
@@ -38,8 +43,8 @@
   height: 50px;
   border-radius: 50%;
   position: fixed;
-  top: 45px;
-  right: 65px;
+  top: 35px;
+  right: 37px;
   background-color: transparent;
   border: none;
   cursor: pointer;
