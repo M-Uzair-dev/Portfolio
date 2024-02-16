@@ -1,7 +1,12 @@
+import Mainpage from "./pages/js/Mainpage";
+import "./app.css";
+
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <div className="mainframe">
+        <Mainpage />
+      </div>
     </>
   );
 }
