@@ -49,6 +49,7 @@
   max-width: 70%;
   border-radius: 50%;
   border: 2px solid #7b35c2;
+  opacity: 0;
 }
 .hello {
   padding: 0;
@@ -63,6 +64,13 @@
   background: linear-gradient(to right, #8c41ec, #6fb6fd);
   background-clip: text;
   color: transparent;
+  width: 0%;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
+.nametext {
+  min-width: 60vw;
 }
 .desc {
   font-weight: 300;
@@ -71,18 +79,45 @@
   letter-spacing: 1px;
   margin-left: 4px;
   max-width: 60%;
+  transition: all 1s ease;
 }
 .stunning {
   background: linear-gradient(to right, #df70ba, #7130c3);
   background-clip: text;
-  color: transparent;
-  font-weight: 600;
-  font-size: 25px;
-  margin: 0 10px;
+  color: white;
+  position: relative;
+  transition: all 1s ease;
+}
+.starwrapper {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  opacity: 0;
+  transition: 1s all ease;
+  margin: 0;
+  padding: 0;
 }
 .star {
   width: 15px;
-  position: absolute;
+
+  filter: invert(73%) sepia(33%) saturate(3717%) hue-rotate(284deg)
+    brightness(94%) contrast(86%);
+}
+.starwrapper:first-of-type {
+  top: -17px;
+  left: -10px;
+}
+.starwrapper:nth-of-type(2) {
+  bottom: 2px;
+  left: 15px;
+}
+.starwrapper:nth-of-type(3) {
+  bottom: 0px;
+  right: 10px;
+}
+.starwrapper:nth-of-type(4) {
+  top: -24px;
+  right: 40px;
 }
 @media (max-width: 1000px) {
   .name {
@@ -90,5 +125,17 @@
   }
   .avatar {
     max-width: 90%;
+  }
+
+  .desc {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .content {
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 }
