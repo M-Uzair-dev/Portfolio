@@ -4,6 +4,7 @@ import avatar from "../../../images/avatar.jpeg";
 import Sidebar from "./Sidebar";
 import star from "../../../images/star.png";
 import { motion } from "framer-motion";
+import logo from "./../../../images/logo.png";
 
 const Mainpage = () => {
   return (
@@ -12,7 +13,9 @@ const Mainpage = () => {
         <div className="brightness">
           <div className="nav">
             <Sidebar />
-            <h1 className="logo">UZAIR</h1>
+            <div className="logo">
+              <img src={logo} alt="logo" />
+            </div>
           </div>
           <div className="content">
             <div className="text">
@@ -20,11 +23,13 @@ const Mainpage = () => {
               <motion.h1
                 className="name"
                 animate={{
-                  width: "110%",
+                  textWrap: "nowrap",
+                  width: "100%",
                   opacity: 1,
                 }}
                 transition={{
-                  duration: 0.5,
+                  delay: 0,
+                  duration: 1,
                   ease: "easeOut",
                 }}
               >
@@ -40,7 +45,7 @@ const Mainpage = () => {
                     fontSize: "25px",
                   }}
                   transition={{
-                    delay: 2,
+                    delay: 3,
                     ease: "easeIn",
                   }}
                 >
@@ -48,7 +53,7 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 2, ease: "easeIn" }}
+                    transition={{ delay: 3, ease: "easeIn" }}
                   >
                     <motion.img
                       src={star}
@@ -65,7 +70,7 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 2, ease: "easeIn" }}
+                    transition={{ delay: 3, ease: "easeIn" }}
                   >
                     <motion.img
                       src={star}
@@ -82,7 +87,7 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 2, ease: "easeIn" }}
+                    transition={{ delay: 3, ease: "easeIn" }}
                   >
                     <motion.img
                       src={star}
@@ -99,7 +104,7 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 2, ease: "easeIn" }}
+                    transition={{ delay: 3, ease: "easeIn" }}
                   >
                     <motion.img
                       src={star}

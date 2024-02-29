@@ -20,10 +20,13 @@
 .logo {
   color: white;
   position: fixed;
-  top: 16px;
-  left: 30px;
+  top: -15px;
+  left: -50px;
   font-weight: 300;
   letter-spacing: 2px;
+}
+.logo img {
+  max-height: 150px;
 }
 .content {
   height: 50vh;
@@ -68,6 +71,8 @@
   opacity: 0;
   overflow: hidden;
   transition: all 2s ease-out;
+  text-wrap: nowrap;
+  position: relative;
 }
 .nametext {
   min-width: 60vw;
@@ -122,6 +127,7 @@
 @media (max-width: 1000px) {
   .name {
     font-size: 8vw;
+    text-wrap: nowrap;
   }
   .avatar {
     max-width: 90%;
@@ -137,5 +143,41 @@
     height: auto;
     flex-direction: column-reverse;
     align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    width: 90vw;
+  }
+  .hello {
+    transform: translateY(50%);
+  }
+  .text {
+    max-width: 1000000px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .image {
+    max-height: 100000000px;
+    width: 90vw;
+    height: 90vw;
+  }
+  .name {
+    font-size: 50px;
+    text-wrap: nowrap;
+  }
+}
+@media (max-width: 360px) {
+  .name {
+    font-size: 40px;
+  }
+  .desc {
+    font-size: 18px;
+  }
+}
+@media (max-width: 290px) {
+  .name {
+    font-size: 30px;
+    text-wrap: nowrap;
   }
 }
