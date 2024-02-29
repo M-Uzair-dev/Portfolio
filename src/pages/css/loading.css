@@ -1,0 +1,33 @@
+.loadingdiv {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(38, 38, 54);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+.loadingdiv img {
+  width: 40vw;
+  max-width: 800px;
+  min-width: 400px;
+}
+.first {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-top: 3px solid rgb(201, 201, 201);
+  border-radius: 50%;
+}
+@media (min-width: 1000px) {
+  .first {
+    height: 300px;
+    width: 300px;
+  }
+}

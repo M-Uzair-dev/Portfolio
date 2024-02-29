@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  overflow: hidden;
 }
 .brightness {
   height: 100vh;
@@ -92,6 +93,7 @@
   color: white;
   position: relative;
   transition: all 1s ease;
+  margin: 15px 8px;
 }
 .starwrapper {
   width: 15px;
@@ -173,6 +175,7 @@
   }
   .desc {
     font-size: 18px;
+    max-width: 100%;
   }
 }
 @media (max-width: 290px) {

@@ -28,9 +28,9 @@ const Mainpage = () => {
                   opacity: 1,
                 }}
                 transition={{
-                  delay: 0,
+                  delay: 1.5,
                   duration: 1,
-                  ease: "easeOut",
+                  ease: "linear",
                 }}
               >
                 <div className="nametext">Uzair Manan</div>
@@ -43,17 +43,18 @@ const Mainpage = () => {
                     color: "transparent",
                     fontWeight: "600",
                     fontSize: "25px",
+                    margin: "0",
                   }}
                   transition={{
-                    delay: 3,
-                    ease: "easeIn",
+                    delay: 4.5,
+                    ease: "linear",
                   }}
                 >
                   Stunning
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 3, ease: "easeIn" }}
+                    transition={{ delay: 4.5, ease: "linear" }}
                   >
                     <motion.img
                       src={star}
@@ -70,7 +71,7 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 3, ease: "easeIn" }}
+                    transition={{ delay: 4.5, ease: "linear" }}
                   >
                     <motion.img
                       src={star}
@@ -87,7 +88,7 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 3, ease: "easeIn" }}
+                    transition={{ delay: 4.5, ease: "linear" }}
                   >
                     <motion.img
                       src={star}
@@ -104,7 +105,7 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 3, ease: "easeIn" }}
+                    transition={{ delay: 4.5, ease: "linear" }}
                   >
                     <motion.img
                       src={star}
@@ -125,7 +126,7 @@ const Mainpage = () => {
             <div className="image">
               <motion.img
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeIn" }}
+                transition={{ duration: 1, ease: "linear" }}
                 src={avatar}
                 className="avatar"
               />
