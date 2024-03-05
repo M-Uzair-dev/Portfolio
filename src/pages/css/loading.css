@@ -7,10 +7,10 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(38, 38, 54);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 9999990;
   overflow: hidden;
 }
 .loadingdiv img {

@@ -4,12 +4,14 @@
   background-image: url("../../../images/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom; /* Ensure bottom of image is always visible */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   overflow: hidden;
 }
+
 .brightness {
   height: 100vh;
   width: 100vw;
@@ -25,6 +27,7 @@
   left: -50px;
   font-weight: 300;
   letter-spacing: 2px;
+  z-index: 100;
 }
 .logo img {
   max-height: 150px;
@@ -71,7 +74,6 @@
   width: 0%;
   opacity: 0;
   overflow: hidden;
-  transition: all 2s ease-out;
   text-wrap: nowrap;
   position: relative;
 }
@@ -85,22 +87,19 @@
   letter-spacing: 1px;
   margin-left: 4px;
   max-width: 60%;
-  transition: all 1s ease;
 }
 .stunning {
   background: linear-gradient(to right, #df70ba, #7130c3);
   background-clip: text;
   color: white;
   position: relative;
-  transition: all 1s ease;
-  margin: 15px 8px;
+  margin: 20px 6px;
 }
 .starwrapper {
   width: 15px;
   height: 15px;
   position: absolute;
   opacity: 0;
-  transition: 1s all ease;
   margin: 0;
   padding: 0;
 }
@@ -126,7 +125,7 @@
   top: -24px;
   right: 40px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1035px) {
   .name {
     font-size: 8vw;
     text-wrap: nowrap;

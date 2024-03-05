@@ -1,23 +1,16 @@
 import React from "react";
 import "../css/mainpage.css";
 import avatar from "../../../images/avatar.jpeg";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 import star from "../../../images/star.png";
 import { motion } from "framer-motion";
-import logo from "./../../../images/logo.png";
 
 const Mainpage = () => {
   return (
-    <div className="mainpage">
+    <div data-scroll data-scroll-speed="-.7" className="mainpage">
       <div className="wrapper">
         <div className="brightness">
-          <div className="nav">
-            <Sidebar />
-            <div className="logo">
-              <img src={logo} alt="logo" />
-            </div>
-          </div>
-          <div className="content">
+          <div className="content" data-scroll data-scroll-speed="0.09">
             <div className="text">
               <p className="hello">Hello, I'm</p>
               <motion.h1
@@ -27,9 +20,14 @@ const Mainpage = () => {
                   width: "100%",
                   opacity: 1,
                 }}
+                initial={{
+                  width: "0%",
+                  opacity: 0,
+                }}
                 transition={{
-                  delay: 1.5,
-                  duration: 1,
+                  type: "tween",
+                  delay: 1.6,
+                  duration: 1.5,
                   ease: "linear",
                 }}
               >
@@ -45,8 +43,13 @@ const Mainpage = () => {
                     fontSize: "25px",
                     margin: "0",
                   }}
+                  initial={{
+                    color: "white",
+                  }}
                   transition={{
+                    type: "tween",
                     delay: 4.5,
+                    duration: 1.5,
                     ease: "linear",
                   }}
                 >
@@ -54,7 +57,15 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 4.5, ease: "linear" }}
+                    initial={{
+                      opacity: 0,
+                    }}
+                    transition={{
+                      type: "tween",
+                      duration: "1.2",
+                      delay: 4.5,
+                      ease: "linear",
+                    }}
                   >
                     <motion.img
                       src={star}
@@ -71,7 +82,13 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 4.5, ease: "linear" }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      type: "tween",
+                      duration: "1.2",
+                      delay: 4.5,
+                      ease: "linear",
+                    }}
                   >
                     <motion.img
                       src={star}
@@ -88,7 +105,15 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 4.5, ease: "linear" }}
+                    initial={{
+                      opacity: 0,
+                    }}
+                    transition={{
+                      type: "tween",
+                      duration: "1.2",
+                      delay: 4.5,
+                      ease: "linear",
+                    }}
                   >
                     <motion.img
                       src={star}
@@ -105,7 +130,15 @@ const Mainpage = () => {
                   <motion.div
                     className="starwrapper"
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 4.5, ease: "linear" }}
+                    initial={{
+                      opacity: 0,
+                    }}
+                    transition={{
+                      type: "tween",
+                      duration: "1.2",
+                      delay: 4.5,
+                      ease: "linear",
+                    }}
                   >
                     <motion.img
                       src={star}
@@ -123,7 +156,7 @@ const Mainpage = () => {
                 websites using CSS and complex JavaScript animations.
               </h3>
             </div>
-            <div className="image">
+            <div className="image" data-scroll data-scroll-speed="0.06">
               <motion.img
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: "linear" }}
