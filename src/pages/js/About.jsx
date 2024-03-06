@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="aboutPage">
       <img className="aboutTop" src={top} />
-      <h1>Other pages ...</h1>
+      <h1>Other Pages ...</h1>
     </div>
   );
 };
