@@ -16,7 +16,6 @@ const Mainpage = () => {
               <motion.h1
                 className="name"
                 animate={{
-                  textWrap: "nowrap",
                   width: "100%",
                   opacity: 1,
                 }}
@@ -38,18 +37,19 @@ const Mainpage = () => {
                 <motion.span
                   className="stunning"
                   animate={{
-                    color: "transparent",
-                    fontWeight: "600",
+                    color: "rgba(255, 255, 255, 0)",
                     fontSize: "25px",
                     margin: "0",
+                    fontWeight: "500",
                   }}
                   initial={{
-                    color: "white",
+                    color: "rgb(255, 255, 255)",
+                    fontWeight: "300",
                   }}
                   transition={{
                     type: "tween",
-                    delay: 4.5,
-                    duration: 1.5,
+                    delay: 3.5,
+                    duration: 1,
                     ease: "linear",
                   }}
                 >
@@ -63,7 +63,7 @@ const Mainpage = () => {
                     transition={{
                       type: "tween",
                       duration: "1.2",
-                      delay: 4.5,
+                      delay: 3.5,
                       ease: "linear",
                     }}
                   >
@@ -86,7 +86,7 @@ const Mainpage = () => {
                     transition={{
                       type: "tween",
                       duration: "1.2",
-                      delay: 4.5,
+                      delay: 3.5,
                       ease: "linear",
                     }}
                   >
@@ -111,7 +111,7 @@ const Mainpage = () => {
                     transition={{
                       type: "tween",
                       duration: "1.2",
-                      delay: 4.5,
+                      delay: 3.5,
                       ease: "linear",
                     }}
                   >
@@ -136,7 +136,7 @@ const Mainpage = () => {
                     transition={{
                       type: "tween",
                       duration: "1.2",
-                      delay: 4.5,
+                      delay: 3.5,
                       ease: "linear",
                     }}
                   >
