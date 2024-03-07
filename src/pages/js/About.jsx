@@ -55,7 +55,7 @@ const About = () => {
           </div>
           <div className="cardDivWrapper">
             <div className="cardDiv">
-              <EvervaultCard text="MERN" />
+              <EvervaultCard text="Uzair" />
             </div>
             <div className="hoverMe">
               <p>Hover</p>

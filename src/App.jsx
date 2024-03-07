@@ -5,6 +5,7 @@ import About from "./pages/js/About";
 import LocomotiveScroll from "locomotive-scroll";
 import Sidebar from "./pages/js/Sidebar";
 import logo from "../images/logo.png";
+import Skills from "./pages/js/Skills";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -29,6 +30,7 @@ function App() {
           </div>
         </div>
         <About />
+        <Skills />
       </div>
     </>
   );
