@@ -26,11 +26,10 @@ const About = () => {
                   viewport={{ once: true }}
                   key={index}
                   onClick={() => {
-                    char === "MERN"
-                      ? window.open(
-                          "https://www.google.com/search?client=opera-gx&q=MERN+Stack&sourceid=opera&ie=UTF-8&oe=UTF-8"
-                        )
-                      : null;
+                    char === "MERN" &&
+                      window.open(
+                        "https://www.google.com/search?client=opera-gx&q=MERN+Stack&sourceid=opera&ie=UTF-8&oe=UTF-8"
+                      );
                   }}
                   style={
                     char === "MERN" && {
@@ -44,7 +43,12 @@ const About = () => {
                     : char === "stack."
                     ? " " + char + " "
                     : char + " "}
-                  {char === "collaborating." && <br />}
+                  {char === "collaborating." && (
+                    <>
+                      <br />
+                      <br />
+                    </>
+                  )}
                 </motion.span>
               ))}
             </motion.p>

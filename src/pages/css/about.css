@@ -58,9 +58,6 @@
   text-align: justify;
   font-weight: 350;
 }
-br {
-  margin-bottom: 20px;
-}
 .cardDivWrapper {
   width: 40%;
   display: flex;
