@@ -22,11 +22,28 @@ const About = () => {
                 <motion.span
                   whileInView={{ opacity: 1 }}
                   initial={{ opacity: 0.4 }}
-                  transition={{ delay: index * 0.04, duration: 0.5 }}
+                  transition={{ delay: index * 0.04 }}
                   viewport={{ once: true }}
                   key={index}
+                  onClick={() => {
+                    char === "MERN"
+                      ? window.open(
+                          "https://www.google.com/search?client=opera-gx&q=MERN+Stack&sourceid=opera&ie=UTF-8&oe=UTF-8"
+                        )
+                      : null;
+                  }}
+                  style={
+                    char === "MERN" && {
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                    }
+                  }
                 >
-                  {char + " "}
+                  {char === "MERN"
+                    ? char
+                    : char === "stack."
+                    ? " " + char + " "
+                    : char + " "}
                   {char === "collaborating." && <br />}
                 </motion.span>
               ))}
@@ -34,7 +51,7 @@ const About = () => {
           </div>
           <div className="cardDivWrapper">
             <div className="cardDiv">
-              <EvervaultCard text="UZAIR" />
+              <EvervaultCard text="MERN" />
             </div>
             <div className="hoverMe">
               <p>Hover</p>

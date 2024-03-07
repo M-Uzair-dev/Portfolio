@@ -58,7 +58,7 @@
   text-align: justify;
   font-weight: 350;
 }
-.AboutText p br {
+br {
   margin-bottom: 20px;
 }
 .cardDivWrapper {
