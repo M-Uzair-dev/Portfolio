@@ -7,16 +7,16 @@ const Projects = () => {
       <h1>My Projects</h1>
       <div className="mainGridDiv">
         <div className="gridDiv1 gridDiv">
-          <p>1</p>
+          <p>Project 1 image</p>
         </div>
         <div className="gridDiv2 gridDiv">
-          <p>2</p>
+          <p>Project 2 image</p>
         </div>
         <div className="gridDiv3 gridDiv">
-          <p>3</p>
+          <p>Project 3 image</p>
         </div>
         <div className="gridDiv4 gridDiv">
-          <p>4</p>
+          <p>Project 4 image</p>
         </div>
       </div>
     </div>

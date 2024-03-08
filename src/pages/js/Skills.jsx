@@ -8,6 +8,7 @@ import react from "../../../images/react.png";
 import nodejs from "../../../images/node.png";
 import express from "../../../images/express.png";
 import mongodb from "../../../images/mongodb.png";
+import { Link } from "react-router-dom";
 
 const Skills = () => {
   return (
@@ -200,7 +201,9 @@ const Skills = () => {
         </div>
       </motion.div>
       <div className="seeMore">
-        <p>More about my skills </p>
+        <p>
+          <Link to={"/skills"}> More about my skills </Link>
+        </p>
       </div>
     </div>
   );
