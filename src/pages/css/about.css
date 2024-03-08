@@ -5,6 +5,7 @@
   background-color: #020203;
   color: white;
   position: relative;
+  padding-bottom: 10px;
 }
 .aboutTop {
   position: absolute;
@@ -22,7 +23,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 .aboutPageinner > h1 {
   width: max-content;

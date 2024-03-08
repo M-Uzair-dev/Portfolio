@@ -145,6 +145,7 @@ const Skills = () => {
         </motion.div>
         <motion.div className="div6">
           <motion.div
+            className="outerCircle"
             animate={{ rotate: 360 }}
             transition={{
               duration: 8,
@@ -152,7 +153,6 @@ const Skills = () => {
               loop: Infinity,
               ease: "linear",
             }}
-            className="outerCircle"
           >
             <motion.div className="circle6">
               <motion.img
@@ -199,6 +199,9 @@ const Skills = () => {
           <p>MERN</p>
         </div>
       </motion.div>
+      <div className="seeMore">
+        <p>More about my skills </p>
+      </div>
     </div>
   );
 };

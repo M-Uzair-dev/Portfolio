@@ -1,0 +1,55 @@
+.projectsPage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: auto;
+  padding-bottom: 100px;
+  background-color: #020203;
+}
+.projectsPage > h1 {
+  width: max-content;
+  margin: 100px auto 50px;
+  font-size: 35px;
+  font-weight: 500;
+  background: linear-gradient(to right, #8c41ec, #78b0e7);
+  background-clip: text;
+  color: transparent;
+}
+.mainGridDiv {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px !important;
+  max-width: 900px;
+}
+.gridDiv {
+  height: 250px;
+  background-color: rgb(68, 68, 68);
+  display: block;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gridDiv1,
+.gridDiv4 {
+  grid-column: span 2;
+}
+@media (max-width: 700px) {
+  .mainGridDiv {
+    width: 95%;
+  }
+}
+@media (max-width: 550px) {
+  .mainGridDiv {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .gridDiv1,
+  .gridDiv4 {
+    grid-column: span 1;
+  }
+}
