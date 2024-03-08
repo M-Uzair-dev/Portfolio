@@ -21,6 +21,8 @@
   height: 85vw;
   min-width: 500px;
   min-height: 500px;
+  max-width: 1000px;
+  max-height: 1000px;
   position: relative;
 }
 .div1 {
@@ -31,7 +33,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 1px solid rgb(31, 31, 31);
+  border: 1px solid #1d1d1d;
   display: flex;
   justify-content: center;
 }
@@ -68,7 +70,7 @@
   width: 87%;
   height: 87%;
   border-radius: 50%;
-  border: 1px solid rgb(39, 39, 39);
+  border: 1px solid #1f1f1f;
   display: flex;
   justify-content: center;
 }
@@ -97,7 +99,7 @@
   width: 74%;
   height: 74%;
   border-radius: 50%;
-  border: 1px solid rgb(44, 44, 44);
+  border: 1px solid #151515;
   display: flex;
   justify-content: center;
 }
@@ -126,7 +128,7 @@
   width: 61%;
   height: 61%;
   border-radius: 50%;
-  border: 1px solid rgb(51, 51, 51);
+  border: 1px solid #2e2e2e;
   display: flex;
   justify-content: center;
 }
@@ -155,8 +157,7 @@
   width: 48%;
   height: 48%;
   border-radius: 50%;
-  border: 1px solid rgb(61, 61, 61);
-  display: flex;
+  border: 1px solid #424242;
   justify-content: center;
 }
 .circle5 {
@@ -184,7 +185,7 @@
   width: 35%;
   height: 35%;
   border-radius: 50%;
-  border: 1px solid rgb(70, 70, 70);
+  border: 1px solid #5c5c5c;
   display: flex;
   justify-content: center;
 }
@@ -213,7 +214,7 @@
   width: 22%;
   height: 22%;
   border-radius: 50%;
-  border: 1px solid rgb(80, 80, 80);
+  border: 1px solid #7e7e7e;
   display: flex;
   justify-content: center;
 }
@@ -251,4 +252,34 @@
   min-width: 60px;
   color: white;
   font-weight: 400;
+}
+@media (max-width: 780px) {
+  .circle1 {
+    height: 60px;
+    width: 60px;
+  }
+  .circle2 {
+    height: 50px;
+    width: 50px;
+  }
+  .circle3 {
+    height: 56px;
+    width: 56px;
+  }
+  .circle4 {
+    height: 50px;
+    width: 50px;
+  }
+  .circle5 {
+    height: 50px;
+    width: 50px;
+  }
+  .circle6 {
+    height: 54px;
+    width: 54px;
+  }
+  .circle7 {
+    height: 40px;
+    width: 40px;
+  }
 }
