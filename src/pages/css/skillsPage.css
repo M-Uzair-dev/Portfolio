@@ -35,7 +35,6 @@
   z-index: 2;
   backdrop-filter: blur(1px);
   border: 2px solid #252525;
-  transition: all 1.5s ease;
 }
 .skillsCards > div > * {
   cursor: default;
@@ -45,11 +44,20 @@
   font-weight: 400;
 }
 .skillsCards > div:hover {
-  background-color: #202020cb;
+  background-color: #181818cb;
 }
 .skillsCards > div > img {
   max-height: 50px;
   margin: 10px 10px 10px 0;
+}
+.backArrow {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  max-height: 40px;
+  filter: brightness(300%);
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 @media (max-width: 1000px) {
   .skillsCards {

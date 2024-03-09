@@ -10,71 +10,97 @@ import express from "../../../images/express.png";
 import mongodb from "../../../images/mongodb.png";
 import next from "../../../images/nextjs.png";
 import typescript from "../../../images/typescript.png";
+import arrow from "../../../images/arrow2.png";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const SkillsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const navigate = useNavigate();
+  const cards = [
+    {
+      name: "HTML",
+      image: html,
+      description: "I learned HTML in 2022",
+    },
+    {
+      name: "CSS",
+      image: css,
+      description: "I learned css after HTML in 2022",
+    },
+    {
+      name: "JavaScript",
+      image: js,
+      description: "I mastered the javascript in the span of 2 years",
+    },
+    {
+      name: "React",
+      image: react,
+      description: "I was able to build a web app using react",
+    },
+    {
+      name: "NodeJS",
+      image: nodejs,
+      description: "I was able to build a server using nodeJS",
+    },
+    {
+      name: "Express",
+      image: express,
+      description: "I was able to build a server using express",
+    },
+    {
+      name: "MongoDB",
+      image: mongodb,
+      description: "I was able to build a server using mongodb",
+    },
+    {
+      name: "NextJS",
+      image: next,
+      description: "I was able to build a web app using nextJS",
+    },
+    {
+      name: "TypeScript",
+      image: typescript,
+      description: "I was able to build a web app using typescript",
+    },
+  ];
   return (
     <div className="skillspage">
       <div className="meteorsDiv">
         <Meteors />
       </div>
-
+      <img
+        src={arrow}
+        onClick={() => {
+          navigate("/");
+        }}
+        className="backArrow"
+      />
       <h1 className="skillsPageHeading">My Skills</h1>
-      <div className="skillsCards">
-        <div className="SkillsCard1">
-          <img src={html} />
-          <h1>HTML</h1>
-          <p>I learned HTML in 2022</p>
-        </div>
-        <div className="SkillsCard2">
-          <img src={css} />
-          <h1>CSS</h1>
-          <p>I learned css after HTML in 2022</p>
-        </div>
-        <div className="SkillsCard3">
-          <img src={js} />
-          <h1>JavaScript</h1>
-          <p>I mastered the javascript in the span of 2 years</p>
-        </div>
-        <div className="SkillsCard4">
-          <img src={react} />
-          <h1>React</h1>
-          <p>After basic understanding of Javascript, I learned react</p>
-        </div>
-        <div className="SkillsCard5">
-          <img src={nodejs} />
-          <h1>NodeJs</h1>
-          <p>
-            After React, my frontend was ready and I learned NodeJs fpr backend
-          </p>
-        </div>
-        <div className="SkillsCard6">
-          <img src={express} style={{ filter: "invert(1)" }} />
-          <h1>ExpressJs</h1>{" "}
-          <p>I learned expressJS for better understanding of backend</p>
-        </div>
-        <div className="SkillsCard7">
-          <img src={mongodb} />
-          <h1>MongoDB</h1>
-          <p>I learned MongoDB for Database management.</p>
-        </div>
-        <div className="SkillsCard8">
-          <img src={next} style={{ filter: "invert(1)" }} />
-          <h1>NextJs</h1>
-          <p>I learned NextJS for better Developer experience and features</p>
-        </div>
-        <div className="SkillsCard9">
-          <img src={typescript} />
-          <h1>TypeScript</h1>
-          <p>
-            I learned TypeScript for better Typing and error handling ovr
-            Javacript
-          </p>
-        </div>
-      </div>
+      <motion.div className="skillsCards">
+        {cards.map((card, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: index * 0.2, type: "tween", duration: "0.5" }}
+          >
+            <img
+              src={card.image}
+              style={
+                card.image === next || card.image === express
+                  ? { filter: "invert(1)" }
+                  : {}
+              }
+            />
+            <h1>{card.name}</h1>
+            <p>{card.description}</p>
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   );
 };

@@ -24,19 +24,30 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px 20px !important;
   max-width: 900px;
+  position: relative;
 }
 .gridDiv {
   height: 250px;
-  background-color: rgb(68, 68, 68);
-  display: block;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid red;
 }
 .gridDiv1,
 .gridDiv4 {
   grid-column: span 2;
+}
+.innerdiv {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(68, 68, 68);
+  top: 0;
+  left: 0;
 }
 @media (max-width: 700px) {
   .mainGridDiv {

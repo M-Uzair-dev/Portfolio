@@ -7,6 +7,7 @@ import Sidebar from "./pages/js/Sidebar";
 import logo from "../images/logo.png";
 import Skills from "./pages/js/Skills";
 import Projects from "./pages/js/Projects";
+import Contact from "./pages/js/Contact";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -33,6 +34,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </div>
     </>
   );
