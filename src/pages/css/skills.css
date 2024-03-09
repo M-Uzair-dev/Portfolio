@@ -17,7 +17,7 @@
   padding: 0 0 100px 0;
   background-color: #020203;
   position: relative;
-  z-index: 99999999;
+  z-index: 9;
 }
 .rotatingDivsWrapper {
   width: 85vw;
@@ -43,10 +43,10 @@
 .circle1 {
   height: 70px;
   width: 70px;
-  background-color: rgba(1, 255, 22, 0.377);
+  background-color: rgba(24, 218, 50, 0.301);
   z-index: 10;
   border: 2px solid rgb(10, 192, 25);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -80,7 +80,7 @@
 .circle2 {
   height: 60px;
   width: 60px;
-  background-color: #ffffffaf;
+  background-color: #ffffffa2;
   z-index: 10;
   border: 2px solid #ffffff;
   backdrop-filter: blur(5px);
@@ -138,7 +138,7 @@
 .circle4 {
   height: 70px;
   width: 70px;
-  background-color: #54cdfd65;
+  background-color: #2696f146;
   z-index: 10;
   border: 2px solid #54cdfd;
   backdrop-filter: blur(5px);
@@ -166,7 +166,7 @@
 .circle5 {
   height: 60px;
   width: 60px;
-  background-color: #d9ff005d;
+  background-color: #d9ff003b;
   z-index: 10;
   border: 2px solid #d9ff00;
   backdrop-filter: blur(5px);
@@ -195,7 +195,7 @@
 .circle6 {
   height: 70px;
   width: 70px;
-  background-color: rgba(2, 180, 224, 0.315);
+  background-color: rgba(2, 180, 224, 0.281);
   z-index: 10;
   border: 2px solid rgb(2, 180, 224);
   backdrop-filter: blur(5px);
@@ -224,7 +224,7 @@
 .circle7 {
   height: 50px;
   width: 50px;
-  background-color: rgba(255, 102, 0, 0.281);
+  background-color: rgba(255, 102, 0, 0.233);
   z-index: 10;
   border: 2px solid rgb(255, 102, 0);
   backdrop-filter: blur(5px);

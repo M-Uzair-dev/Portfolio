@@ -48,7 +48,7 @@ const Mainpage = () => {
                   }}
                   transition={{
                     type: "tween",
-                    delay: 3.5,
+                    delay: 4.5,
                     duration: 1,
                     ease: "linear",
                   }}
@@ -63,7 +63,7 @@ const Mainpage = () => {
                     transition={{
                       type: "tween",
                       duration: "1.2",
-                      delay: 3.5,
+                      delay: 4.5,
                       ease: "linear",
                     }}
                   >
@@ -86,7 +86,7 @@ const Mainpage = () => {
                     transition={{
                       type: "tween",
                       duration: "1.2",
-                      delay: 3.5,
+                      delay: 4.5,
                       ease: "linear",
                     }}
                   >
@@ -111,7 +111,7 @@ const Mainpage = () => {
                     transition={{
                       type: "tween",
                       duration: "1.2",
-                      delay: 3.5,
+                      delay: 4.5,
                       ease: "linear",
                     }}
                   >
@@ -136,7 +136,7 @@ const Mainpage = () => {
                     transition={{
                       type: "tween",
                       duration: "1.2",
-                      delay: 3.5,
+                      delay: 4.5,
                       ease: "linear",
                     }}
                   >
