@@ -269,8 +269,14 @@
   font-size: 19px;
   font-weight: 500;
   cursor: pointer;
-  margin-right: 50px;
 }
+.seeMore > img {
+  max-height: 20px !important;
+  margin-right: 50px;
+  margin-left: 5px;
+  filter: brightness(20000%);
+}
+
 @media (max-width: 780px) {
   .circle1 {
     height: 60px;
@@ -299,5 +305,14 @@
   .circle7 {
     height: 40px;
     width: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .seeMore {
+    margin-top: 100px;
+    justify-content: center;
+  }
+  .seeMore > img {
+    margin: 0;
   }
 }

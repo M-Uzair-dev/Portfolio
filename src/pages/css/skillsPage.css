@@ -35,7 +35,7 @@
   z-index: 2;
   backdrop-filter: blur(1px);
   border: 2px solid #252525;
-  transition: all 1s ease;
+  transition: all 1.5s ease;
 }
 .skillsCards > div > * {
   cursor: default;
@@ -45,7 +45,7 @@
   font-weight: 400;
 }
 .skillsCards > div:hover {
-  background-color: #1a1a1a;
+  background-color: #202020cb;
 }
 .skillsCards > div > img {
   max-height: 50px;

@@ -8,6 +8,7 @@ import react from "../../../images/react.png";
 import nodejs from "../../../images/node.png";
 import express from "../../../images/express.png";
 import mongodb from "../../../images/mongodb.png";
+import arrow from "../../../images/arrow2.png";
 import { Link } from "react-router-dom";
 
 const Skills = () => {
@@ -204,6 +205,7 @@ const Skills = () => {
         <p>
           <Link to={"/skills"}> More about my skills </Link>
         </p>
+        <img src={arrow} />
       </div>
     </div>
   );
