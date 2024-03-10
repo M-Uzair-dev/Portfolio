@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../css/projects.css";
-import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
@@ -13,7 +12,7 @@ const Projects = () => {
       <div className="mainGridDiv">
         <div
           className="gridDiv1 gridDiv"
-          onClick={() => navigate("/projects/messegit")}
+          onClick={() => navigate("/project/messegit")}
         >
           <div className="innerdiv1 innerdiv">
             <div className="projectCardText">
@@ -24,7 +23,7 @@ const Projects = () => {
         </div>
         <div
           className="gridDiv2 gridDiv"
-          onClick={() => navigate("/projects/textguard")}
+          onClick={() => navigate("/project/textguard")}
         >
           <div className="innerdiv">
             <div className="projectCardText">
@@ -35,7 +34,7 @@ const Projects = () => {
         </div>
         <div
           className="gridDiv3 gridDiv"
-          onClick={() => navigate("/projects/cinemorphia")}
+          onClick={() => navigate("/project/cinemorphia")}
         >
           <div className="innerdiv">
             <div className="projectCardText">
@@ -46,7 +45,7 @@ const Projects = () => {
         </div>
         <div
           className="gridDiv4 gridDiv"
-          onClick={() => navigate("/projects/propertyseekers")}
+          onClick={() => navigate("/project/propertyseekers")}
         >
           <div className="innerdiv">
             <div className="projectCardText">
