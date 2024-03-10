@@ -24,8 +24,8 @@
   height: 85vw;
   min-width: 500px;
   min-height: 500px;
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 650px;
+  max-height: 650px;
   position: relative;
 }
 .div1 {
@@ -243,8 +243,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 9%;
-  height: 9%;
+  width: 12%;
+  height: 12%;
   background-color: #692abb;
   border-radius: 50%;
   display: flex;
@@ -255,6 +255,7 @@
   min-width: 60px;
   color: white;
   font-weight: 400;
+  font-size: 20px;
 }
 .seeMore {
   color: white;

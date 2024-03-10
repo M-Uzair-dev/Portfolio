@@ -26,7 +26,9 @@
   gap: 10px;
   margin-bottom: 100px;
 }
-.skillsCards > div {
+.innercard {
+  height: 100%;
+  width: 100%;
   padding: 20px;
   min-height: 200px;
   background-color: #17171881;
@@ -34,19 +36,53 @@
   position: relative;
   z-index: 2;
   backdrop-filter: blur(1px);
+  transition: all 0.8s ease;
   border: 2px solid #252525;
 }
-.skillsCards > div > * {
+.innercard > * {
   cursor: default;
 }
-.skillsCards > div > h1 {
+.innercard > h1 {
   font-size: 25px;
   font-weight: 400;
 }
-.skillsCards > div:hover {
-  background-color: #181818cb;
+.HTML:hover {
+  background-color: #ce540233;
+  border: 2px solid #ce54028e;
 }
-.skillsCards > div > img {
+.CSS:hover {
+  background-color: #026bce27;
+  border: 2px solid #026bce69;
+}
+.JavaScript:hover {
+  background-color: #cec00227;
+  border: 2px solid #cec00262;
+}
+.React:hover {
+  background-color: #029ece27;
+  border: 2px solid #029ece62;
+}
+.NodeJS:hover {
+  background-color: #24ce021f;
+  border: 2px solid #4dce0267;
+}
+.Express:hover {
+  background-color: #ffffff1f;
+  border: 2px solid #ffffff67;
+}
+.MongoDB:hover {
+  background-color: #46c42d1f;
+  border: 2px solid #61b82f67;
+}
+.NextJS:hover {
+  background-color: #ffffff1f;
+  border: 2px solid #ffffff67;
+}
+.TypeScript:hover {
+  background-color: #026bce27;
+  border: 2px solid #026bce69;
+}
+.innercard > img {
   max-height: 50px;
   margin: 10px 10px 10px 0;
 }
@@ -71,6 +107,42 @@
     gap: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+  .HTML {
+    background-color: #ce540223;
+    border: 2px solid #ce540273;
+  }
+  .CSS {
+    background-color: #026bce1c;
+    border: 2px solid #026bce54;
+  }
+  .JavaScript {
+    background-color: #cec0021e;
+    border: 2px solid #cec0023f;
+  }
+  .React {
+    background-color: #029ece15;
+    border: 2px solid #029ece46;
+  }
+  .NodeJS {
+    background-color: #24ce0215;
+    border: 2px solid #4dce023d;
+  }
+  .Express {
+    background-color: #ffffff13;
+    border: 2px solid #ffffff44;
+  }
+  .MongoDB {
+    background-color: #46c42d13;
+    border: 2px solid #61b82f54;
+  }
+  .NextJS {
+    background-color: #ffffff11;
+    border: 2px solid #ffffff4f;
+  }
+  .TypeScript {
+    background-color: #026bce18;
+    border: 2px solid #026bce50;
   }
 }
 @media (max-width: 820px) {

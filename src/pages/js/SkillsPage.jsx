@@ -59,12 +59,12 @@ const SkillsPage = () => {
     {
       name: "NextJS",
       image: next,
-      description: "I was able to build a web app using nextJS",
+      description: "I will learn nextJS very soon.",
     },
     {
       name: "TypeScript",
       image: typescript,
-      description: "I was able to build a web app using typescript",
+      description: "I wil learn typescript right after nextJS.",
     },
   ];
   return (
@@ -88,16 +88,18 @@ const SkillsPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: index * 0.2, type: "tween", duration: "0.5" }}
           >
-            <img
-              src={card.image}
-              style={
-                card.image === next || card.image === express
-                  ? { filter: "invert(1)" }
-                  : {}
-              }
-            />
-            <h1>{card.name}</h1>
-            <p>{card.description}</p>
+            <div className={`innercard ${card.name}`}>
+              <img
+                src={card.image}
+                style={
+                  card.image === next || card.image === express
+                    ? { filter: "invert(1)" }
+                    : {}
+                }
+              />
+              <h1>{card.name}</h1>
+              <p>{card.description}</p>
+            </div>
           </motion.div>
         ))}
       </motion.div>

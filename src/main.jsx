@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import SkillsPage from "./pages/js/SkillsPage.jsx";
+import ProjectDetails from "./pages/js/ProjectDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/skills",
     element: <SkillsPage />,
+  },
+  {
+    path: "/project/:id",
+    element: <ProjectDetails />,
   },
 ]);
 

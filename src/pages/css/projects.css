@@ -32,7 +32,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
 }
 .gridDiv1,
 .gridDiv4 {
@@ -42,19 +41,63 @@
   height: 100%;
   width: 100%;
   border-radius: 20px;
+  flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgb(68, 68, 68);
-  top: 0;
-  left: 0;
+  justify-content: flex-end;
+  background-color: rgb(53, 53, 53);
 }
+.projectCardText {
+  width: 90%;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: 0.4s all ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.innerdiv:hover .projectCardText {
+  opacity: 1;
+}
+.projectCardText > h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.click {
+  width: max-content;
+  text-align: right;
+  font-size: 16px;
+  color: rgb(173, 173, 173);
+}
+@media (max-width: 1100px) {
+  .projectCardText > h1 {
+    font-size: 25px;
+  }
+  .projectCardText > p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 915px) {
+  .projectCardText > h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .innerdiv {
+    position: relative !important;
+  }
+}
+
 @media (max-width: 700px) {
   .mainGridDiv {
     width: 95%;
   }
 }
-@media (max-width: 550px) {
+
+@media (max-width: 615px) {
   .mainGridDiv {
     width: 90%;
     grid-template-columns: 1fr;
@@ -62,5 +105,11 @@
   .gridDiv1,
   .gridDiv4 {
     grid-column: span 1;
+  }
+  .projectCardText > h1 {
+    font-size: 25px;
+  }
+  .projectCardText {
+    opacity: 1;
   }
 }
