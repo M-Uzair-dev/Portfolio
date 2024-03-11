@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../css/contact.css";
-import html from "../../../images/html.png";
+import git from "../../../images/git.png";
+import fb from "../../../images/fb.png";
+import upwork from "../../../images/upwork.png";
+import whatsapp from "../../../images/whatsapp.png";
 
 const Contact = () => {
   const [isHovered, setIsHovered] = useState(0);
@@ -100,10 +103,10 @@ const Contact = () => {
             </div>
           </div>
           <div className="socialicons">
-            <img src={html} />
-            <img src={html} />
-            <img src={html} />
-            <img src={html} />
+            <img src={whatsapp} />
+            <img src={fb} />
+            <img src={upwork} />
+            <img src={git} style={{ filter: "invert(1)" }} />
           </div>
         </div>
       </div>

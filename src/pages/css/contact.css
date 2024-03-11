@@ -47,6 +47,9 @@
 .message {
   min-height: 200px;
 }
+.FormDiv > textarea {
+  max-height: 300px;
+}
 .FormDiv > button {
   background-color: #474747;
   color: rgb(228, 228, 228);
@@ -98,15 +101,16 @@
 }
 
 .socialicons > img {
-  max-height: 40px;
-  margin: 0 20px;
+  max-height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
 }
 .textinContact {
   position: relative;
 }
 .textinContact span {
   display: inline-block;
-  transition: 0.7s all ease;
+  transition: 0.7s all cubic-bezier(0.25, 1, 0.5, 1);
 }
 .textinContact:hover span:nth-of-type(1) {
   transform: translate(-20%, -30%) rotate(30deg);
