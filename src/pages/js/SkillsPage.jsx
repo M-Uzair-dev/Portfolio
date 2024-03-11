@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 const SkillsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    return () => {};
   }, []);
 
   const navigate = useNavigate();

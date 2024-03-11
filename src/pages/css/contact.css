@@ -1,0 +1,223 @@
+.contactPage {
+  padding-bottom: 100px;
+}
+.contactPage > h1 {
+  width: max-content;
+  margin: 10px auto 50px;
+  font-size: 35px;
+  font-weight: 500;
+  background: linear-gradient(to right, #8c41ec, #78b0e7);
+  background-clip: text;
+  color: transparent;
+}
+.contactDetails {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+}
+.FormDiv {
+  width: 60%;
+  border-right: 2px solid #1f1f1f;
+}
+.textDiv {
+  width: 40%;
+}
+.FormDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.FormDiv > * {
+  width: 90%;
+  margin: 10px 0;
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  font-size: 19px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.message {
+  min-height: 200px;
+}
+.FormDiv > button {
+  background-color: #474747;
+  color: rgb(228, 228, 228);
+  transition: 0.4s all ease;
+}
+.FormDiv > button:hover {
+  background-color: #5c5c5c;
+  color: rgb(231, 231, 231);
+}
+.textDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.textDiv > h1 {
+  font-size: 40px;
+  margin: 40px 0;
+  font-weight: 500;
+}
+.contactinfoDetails {
+  margin: 20px 0 30px 0;
+}
+.contactinfoDetails > * {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 35px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.whiteText {
+  color: white;
+}
+
+.greyText {
+  color: rgb(53, 53, 53);
+}
+
+.contactinfoDetails > p {
+  font-size: 20px;
+}
+.socialicons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+}
+
+.socialicons > img {
+  max-height: 40px;
+  margin: 0 20px;
+}
+.textinContact {
+  position: relative;
+}
+.textinContact span {
+  display: inline-block;
+  transition: 0.7s all ease;
+}
+.textinContact:hover span:nth-of-type(1) {
+  transform: translate(-20%, -30%) rotate(30deg);
+}
+.textinContact:hover span:nth-of-type(2) {
+  transform: translate(-30%, 20%) rotate(12deg);
+}
+
+.textinContact:hover span:nth-of-type(3) {
+  transform: translate(-10%, -10%) rotate(-10deg);
+}
+
+.textinContact:hover span:nth-of-type(4) {
+  transform: translate(30%, 20%) rotate(20deg);
+}
+
+.textinContact:hover span:nth-of-type(5) {
+  transform: translate(30%, -20%) rotate(-20deg);
+}
+.textinContact:hover span:nth-of-type(6) {
+  transform: translate(10%, 10%) rotate(-15deg);
+}
+.textinContact:hover span:nth-of-type(7) {
+  transform: translate(15%, -30%) rotate(20deg);
+}
+.textinContact:hover span:nth-of-type(8) {
+  transform: translate(15%, 15%) rotate(20deg);
+}
+
+.textinContact:hover span:nth-of-type(9) {
+  transform: translate(10%, -20%) rotate(-30deg);
+}
+
+.textinContact:hover span:nth-of-type(10) {
+  transform: translate(30%, 20%) rotate(30deg);
+}
+
+.textinContact:hover span:nth-of-type(11) {
+  transform: translate(40%, 40%) rotate(-20deg);
+}
+.textinContact:hover span:nth-of-type(12) {
+  transform: translate(30%, -10%) rotate(-30deg);
+}
+.textinContact:hover span:nth-of-type(13) {
+  transform: translate(40%, 30%) rotate(20deg);
+}
+.textinContact:hover span:nth-of-type(14) {
+  transform: translate(20%, -30%) rotate(30deg);
+}
+
+.textinContact:hover span:nth-of-type(15) {
+  transform: translate(10%, 10%) rotate(-30deg);
+}
+
+.textinContact:hover span:nth-of-type(16) {
+  transform: translate(30%, 20%) rotate(-10deg);
+}
+
+.textinContact:hover span:nth-of-type(17) {
+  transform: translate(30%, -10%) rotate(-20deg);
+}
+.textinContact:hover span:nth-of-type(18) {
+  transform: translate(100%, 30%);
+}
+.textinContact:hover span:nth-of-type(19) {
+  transform: translate(120%, -10%) rotate(-20deg);
+}
+.textinContact:hover span:nth-of-type(21) {
+  transform: translate(10%, 30%) rotate(30deg);
+}
+
+.textinContact:hover span:nth-of-type(22) {
+  transform: translate(-10%, -10%) rotate(-30deg);
+}
+
+.textinContact:hover span:nth-of-type(23) {
+  transform: translate(-30%, 20%) rotate(-20deg);
+}
+
+.textinContact:hover span:nth-of-type(24) {
+  transform: translate(80%, -50%) rotate(-20deg);
+}
+@media (max-width: 900px) {
+  .contactDetails {
+    width: 95%;
+  }
+  .FormDiv {
+    width: 50%;
+  }
+  .textDiv {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .contactDetails {
+    flex-direction: column-reverse;
+  }
+  .FormDiv {
+    width: 100%;
+    padding-top: 30px;
+    border: none;
+  }
+  .textDiv {
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #1f1f1f;
+  }
+  .textinContact {
+    pointer-events: none;
+  }
+  .textDiv > h1 {
+    display: none;
+  }
+}
