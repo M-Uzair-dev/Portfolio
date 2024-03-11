@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 50px;
+  padding: 30px 50px 70px 50px;
   background-color: #101010;
+  overflow: hidden;
+  margin: 0;
 }
 .footerLeftDiv {
   max-width: 40%;

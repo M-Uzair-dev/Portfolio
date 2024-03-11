@@ -8,7 +8,7 @@ import arrow from "../../../images/arrow2.png";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" data-scroll data-scroll-speed=".3">
       <div className="footerLeftDiv">
         <h1>Uzair Manan</h1>
         <p>
