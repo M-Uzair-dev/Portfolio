@@ -22,10 +22,11 @@
   max-height: 50px;
   margin: 20px 5px;
   cursor: pointer;
+  z-index: 2000;
 }
 .footerLeftDiv > h1 {
   width: max-content;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 500;
   background: linear-gradient(to right, #8c41ec, #78b0e7);
   background-clip: text;
@@ -35,7 +36,7 @@
 .footerLeftDiv > p {
   font-size: 18px;
   font-weight: 300;
-  margin: 20px 0;
+  margin: 10px 0 20px 0;
   text-align: justify;
   cursor: default;
 }
@@ -73,6 +74,7 @@
   justify-content: center;
   font-size: 19px;
   font-weight: 300;
+  z-index: 2000;
 }
 .footerRightDiv > button > img {
   max-height: 25px;
