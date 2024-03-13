@@ -76,7 +76,7 @@ const SkillsPage = () => {
       <img
         src={arrow}
         onClick={() => {
-          navigate("/");
+          navigate(-1);
         }}
         className="backArrow"
       />

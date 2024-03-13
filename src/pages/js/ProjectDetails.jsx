@@ -1,29 +1,28 @@
 import React, { useEffect } from "react";
 import "../css/projectdetails.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import textguard from "../../../images/textguard.png";
 import messegit from "../../../images/messegit.png";
 import prsek from "../../../images/propertyseekers.png";
 import arrow from "../../../images/arrow2.png";
 import cinemorphia from "../../../images/cinemorphia.png";
-import { useHistory } from "react-router-dom";
 
 const ProjectDetails = () => {
   const { id: projectName } = useParams();
 
-  const history = useHistory();
   useEffect(() => {
     window.scrollTo(0, 0);
     return () => {};
   }, []);
 
+  const navigate = useNavigate();
   return (
     <div className="projectDetails">
       <img
         src={arrow}
         className="backarrowbutton"
         onClick={() => {
-          history.goBack();
+          navigate(-1);
         }}
       />
       <div className="wrapperinProjectDetails">
@@ -114,7 +113,13 @@ const ProjectDetails = () => {
                 >
                   Live Demo
                 </button>
-                <button>Source Code</button>
+                <button
+                  onClick={() => {
+                    window.open("https://github.com/M-Uzair-dev/messegit");
+                  }}
+                >
+                  Source Code
+                </button>
               </div>
             </div>
           </>
@@ -189,7 +194,13 @@ const ProjectDetails = () => {
                 >
                   Live Demo
                 </button>
-                <button>Source Code</button>
+                <button
+                  onClick={() => {
+                    window.open("https://github.com/M-Uzair-dev/Cinemorphia");
+                  }}
+                >
+                  Source Code
+                </button>
               </div>
             </div>
           </>
@@ -263,7 +274,14 @@ const ProjectDetails = () => {
                   >
                     Live Demo
                   </button>
-                  <button>Source Code</button>
+
+                  <button
+                    onClick={() => {
+                      window.open("https://github.com/M-Uzair-dev/TextGuard");
+                    }}
+                  >
+                    Source Code
+                  </button>
                 </div>
               </div>
             </>
@@ -344,12 +362,20 @@ const ProjectDetails = () => {
                 <div className="projectDetailButtons">
                   <button
                     onClick={() => {
-                      window.open("https://proprtyseekers.vercel.app");
+                      window.open("https://propertyseekers.vercel.app");
                     }}
                   >
                     Live Demo
                   </button>
-                  <button>Source Code</button>
+                  <button
+                    onClick={() => {
+                      window.open(
+                        "https://github.com/M-Uzair-dev/PropertySeekers"
+                      );
+                    }}
+                  >
+                    Source Code
+                  </button>
                 </div>
               </div>
             </>

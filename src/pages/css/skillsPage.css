@@ -94,6 +94,7 @@
   filter: brightness(300%);
   transform: rotate(180deg);
   cursor: pointer;
+  z-index: 10000000;
 }
 @media (max-width: 1000px) {
   .skillsCards {

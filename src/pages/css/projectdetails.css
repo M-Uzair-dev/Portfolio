@@ -70,7 +70,11 @@
   position: fixed;
   top: 20px;
   left: 20px;
-  max-height: 60px;
+  max-height: 40px;
+  filter: brightness(300%);
+  transform: rotate(180deg);
+  cursor: pointer;
+  z-index: 10000000;
 }
 @media (max-width: 600px) {
   .projectDetails h1 {
