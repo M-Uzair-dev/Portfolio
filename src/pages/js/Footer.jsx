@@ -9,15 +9,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <motion.div
-      className="footer"
-      data-scroll
-      data-scroll-speed=".3"
-      whileInView={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      transition={{ type: "tween", delay: 1, duretion: 2 }}
-      viewport={{ once: true }}
-    >
+    <motion.div className="footer" data-scroll data-scroll-speed=".3">
       <div className="footerLeftDiv">
         <h1>Uzair Manan</h1>
         <p>

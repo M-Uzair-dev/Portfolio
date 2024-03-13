@@ -73,10 +73,10 @@
     rgba(0, 0, 0, 0.568),
     rgba(255, 255, 255, 0)
   );
+  z-index: 100;
 }
 .innerdiv:hover .projectCardText {
-  opacity: 1 !important;
-  z-index: 100;
+  opacity: 1;
 }
 .projectCardText > h1 {
   font-size: 30px;
@@ -131,6 +131,6 @@
     font-size: 25px;
   }
   .projectCardText {
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
