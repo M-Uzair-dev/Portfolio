@@ -56,6 +56,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  -webkit-box-shadow: 0px 0px 81px 5px rgba(10, 192, 25, 0.342);
+  -moz-box-shadow: 0px 0px 81px 5px rgba(10, 192, 25, 0.342);
+  box-shadow: 0px 0px 81px 5px rgba(10, 192, 25, 0.342);
 }
 .circle > img {
   max-width: 80%;
@@ -93,6 +97,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  -webkit-box-shadow: 0px 0px 81px 5px rgba(255, 255, 255, 0.315);
+  -moz-box-shadow: 0px 0px 81px 5px rgba(255, 255, 255, 0.315);
+  box-shadow: 0px 0px 81px 5px rgba(255, 255, 255, 0.315);
 }
 .div3 {
   position: absolute;
@@ -111,7 +118,7 @@
   width: 76px;
   background-color: #09d12456;
   z-index: 10000;
-  border: 2px solid #09d124;
+  border: 2px solid #08cf22;
   backdrop-filter: blur(5px);
   border-radius: 50%;
   position: absolute;
@@ -122,6 +129,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  -webkit-box-shadow: 0px 0px 81px 5px #08cf2369;
+  -moz-box-shadow: 0px 0px 81px 5px #08cf2369;
+  box-shadow: 0px 0px 81px 5px #08cf2369;
 }
 .div4 {
   position: absolute;
@@ -151,6 +162,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  -webkit-box-shadow: 0px 0px 81px 5px #54cdfd5b;
+  -moz-box-shadow: 0px 0px 81px 5px #54cdfd5b;
+  box-shadow: 0px 0px 81px 5px #54cdfd5b;
 }
 .div5 {
   position: absolute;
@@ -179,6 +194,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  -webkit-box-shadow: 0px 0px 81px 5px #d9ff0048;
+  -moz-box-shadow: 0px 0px 81px 5px #d9ff0048;
+  box-shadow: 0px 0px 81px 5px #d9ff0048;
 }
 .div6 {
   position: absolute;
@@ -208,6 +226,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  -webkit-box-shadow: 0px 0px 81px 5px #54cdfd5b;
+  -moz-box-shadow: 0px 0px 81px 5px #54cdfd5b;
+  box-shadow: 0px 0px 81px 5px #54cdfd5b;
 }
 .div7 {
   position: absolute;
@@ -237,6 +259,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  -webkit-box-shadow: 0px 0px 81px 5px rgba(255, 102, 0, 0.363);
+  -moz-box-shadow: 0px 0px 81px 5px rgba(255, 102, 0, 0.349);
+  box-shadow: 0px 0px 81px 5px rgba(255, 102, 0, 0.377);
 }
 .centerDiv {
   position: absolute;

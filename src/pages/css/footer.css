@@ -20,7 +20,7 @@
 }
 .imagesDiv > img {
   max-height: 50px;
-  margin: 20px 5px;
+  margin: 70px 5px 20px 5px;
   cursor: pointer;
   z-index: 2000;
 }
@@ -66,9 +66,9 @@
 }
 .footerRightDiv > button {
   padding: 12px 25px;
-  background-color: #545454;
+  background-color: #545454 !important;
   border-radius: 50px;
-  margin-top: 20px;
+  margin-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;

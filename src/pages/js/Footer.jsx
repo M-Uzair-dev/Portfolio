@@ -5,10 +5,19 @@ import fb from "../../../images/fb.png";
 import upwork from "../../../images/upwork.png";
 import whatsapp from "../../../images/whatsapp.png";
 import arrow from "../../../images/arrow2.png";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div className="footer" data-scroll data-scroll-speed=".3">
+    <motion.div
+      className="footer"
+      data-scroll
+      data-scroll-speed=".3"
+      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{ type: "tween", delay: 1, duretion: 2 }}
+      viewport={{ once: true }}
+    >
       <div className="footerLeftDiv">
         <h1>Uzair Manan</h1>
         <p>
@@ -18,7 +27,7 @@ const Footer = () => {
           project codes and history on my <span>GitHub</span>. And for project
           discussions, you can reach me through <span>Upwork</span>.
         </p>
-        <div className="imagesDiv">
+        <div className="imagesDiv" data-scroll data-scroll-speed="-0.1">
           <img src={whatsapp} />
           <img src={fb} />
           <img src={upwork} />
@@ -33,11 +42,15 @@ const Footer = () => {
           <p>Projects</p>
           <p>Contact</p>
         </div>
-        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          data-scroll
+          data-scroll-speed="-0.1"
+        >
           Back to top <img src={arrow} />
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
