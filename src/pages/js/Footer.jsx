@@ -3,6 +3,7 @@ import "../css/footer.css";
 import git from "../../../images/git.png";
 import fb from "../../../images/fb.png";
 import upwork from "../../../images/upwork.png";
+import { Link } from "react-scroll";
 import whatsapp from "../../../images/whatsapp.png";
 import arrow from "../../../images/arrow2.png";
 import { motion } from "framer-motion";
@@ -28,11 +29,31 @@ const Footer = () => {
       </div>
       <div className="footerRightDiv">
         <div className="linksDiv">
-          <p>Home</p>
-          <p>About</p>
-          <p>Skills</p>
-          <p>Projects</p>
-          <p>Contact</p>
+          <p>
+            <Link to="HOME" smooth={true} duration={500}>
+              Home
+            </Link>
+          </p>
+          <p>
+            <Link to="ABOUT" smooth={true} duration={500}>
+              About
+            </Link>
+          </p>
+          <p>
+            <Link to="SKILLS" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </p>
+          <p>
+            <Link to="PROJECTS" smooth={true} duration={500}>
+              Projects
+            </Link>
+          </p>
+          <p>
+            <Link to="CONTACT" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </p>
         </div>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

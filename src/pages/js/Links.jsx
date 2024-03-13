@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const variants = {
   open: {
@@ -36,7 +37,9 @@ const Links = () => {
           whileHover={{ scale: 1.1, fontWeight: 450 }}
           whileTap={{ scale: 0.95 }}
         >
-          {item}
+          <Link to={item} smooth={true} duration={500}>
+            {item}
+          </Link>
         </motion.a>
       ))}
     </motion.div>

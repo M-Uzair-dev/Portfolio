@@ -5,7 +5,7 @@
   background-color: #020203;
   color: white;
   position: relative;
-  padding-bottom: 10px;
+  padding: 50px 0;
 }
 .aboutTop {
   position: absolute;
@@ -13,7 +13,6 @@
   left: 50%;
   width: 100%;
   min-width: 1350px;
-  /* height: 10%; */
   transform: translate(-50%, -99%);
   z-index: 99;
 }

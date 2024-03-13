@@ -1,0 +1,94 @@
+.projectDetails {
+  background-color: #020203;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  max-width: 100vw;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif !important;
+}
+.wrapperinProjectDetails {
+  width: 90%;
+}
+.image {
+  width: 90%;
+  margin: 0 auto 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.textinProjectDetails {
+  width: 100% !important;
+}
+.projectDetails h1 {
+  font-size: 30px;
+  margin: 20px 0 !important;
+  width: max-content;
+  background: linear-gradient(to right, #8c41ec, #78b0e7);
+  background-clip: text;
+  font-weight: 500;
+  color: transparent;
+  max-width: 100%;
+}
+.projectDetails p {
+  font-size: 20px;
+  margin: 18px 0 !important;
+  text-align: justify;
+}
+.projectDetails br {
+  margin-bottom: 20px;
+}
+.projectDetails li {
+  list-style: disc;
+  font-size: 20px;
+  margin-left: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.projectDetails li > span {
+  font-weight: 400;
+  font-size: 22px;
+}
+.projectDetailButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 20px;
+}
+.projectDetailButtons > button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #232324;
+  border-radius: 10px;
+  font-weight: 300;
+}
+.backarrowbutton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  max-height: 60px;
+}
+@media (max-width: 600px) {
+  .projectDetails h1 {
+    font-size: 25;
+  }
+  .projectDetails p {
+    font-size: 17px;
+  }
+  .projectDetails li {
+    list-style: disc;
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: left !important;
+  }
+  .projectDetails li > span {
+    font-weight: 400;
+    font-size: 19px;
+  }
+}

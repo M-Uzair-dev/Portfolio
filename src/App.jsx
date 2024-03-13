@@ -9,6 +9,7 @@ import Skills from "./pages/js/Skills";
 import Projects from "./pages/js/Projects";
 import Contact from "./pages/js/Contact";
 import Footer from "./pages/js/Footer";
+import { Link, Element, animateScroll as scroll } from "react-scroll";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -25,17 +26,31 @@ function App() {
     <>
       <div className="mainframe">
         <Loading />
-        <Mainpage />
+
+        <Element name="HOME">
+          <Mainpage />
+        </Element>
         <div className="nav">
           <Sidebar />
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>
         </div>
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Element name="ABOUT">
+          <About />
+        </Element>
+
+        <Element name="SKILLS">
+          <Skills />
+        </Element>
+
+        <Element name="PROJECTS">
+          <Projects />
+        </Element>
+
+        <Element name="CONTACT">
+          <Contact />
+        </Element>
         <Footer />
       </div>
     </>
