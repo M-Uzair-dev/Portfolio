@@ -12,16 +12,19 @@
 .wrapperinProjectDetails {
   width: 90%;
 }
-.imageimageinProjectDetails {
+.imageinProjectDetails {
   width: 90%;
   margin: 50px auto;
   border-radius: 50px;
   overflow: hidden;
   height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.imageimageinProjectDetails > img {
+.imageinProjectDetails > img {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 50px !important;
   max-width: 800px;
 }
 .textinProjectDetails {

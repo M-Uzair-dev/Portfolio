@@ -13,7 +13,7 @@ const ProjectDetails = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     return () => {};
-  }, []);
+  }, [projectName]);
 
   const navigate = useNavigate();
   return (
@@ -28,7 +28,7 @@ const ProjectDetails = () => {
       <div className="wrapperinProjectDetails">
         {projectName === "messegit" ? (
           <>
-            <div className="image">
+            <div className="imageinProjectDetails">
               <img src={messegit} />
             </div>
             <div className="textinProjectDetails">
@@ -125,7 +125,7 @@ const ProjectDetails = () => {
           </>
         ) : projectName === "cinemorphia" ? (
           <>
-            <div className="image">
+            <div className="imageinProjectDetails">
               <img src={cinemorphia} />{" "}
             </div>
             <div className="textinProjectDetails">
@@ -289,7 +289,7 @@ const ProjectDetails = () => {
         ) : (
           <>
             <>
-              <div className="image">
+              <div className="imageinProjectDetails">
                 <img src={prsek} />{" "}
               </div>
               <div className="textinProjectDetails">

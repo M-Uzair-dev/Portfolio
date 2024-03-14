@@ -25,7 +25,7 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({ close }) => {
   const items = ["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT"];
 
   return (
@@ -37,7 +37,7 @@ const Links = () => {
           whileHover={{ scale: 1.1, fontWeight: 450 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Link to={item} smooth={true} duration={500}>
+          <Link to={item} smooth={true} duration={500} onClick={close}>
             {item}
           </Link>
         </motion.a>

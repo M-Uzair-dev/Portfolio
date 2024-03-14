@@ -22,7 +22,7 @@
 }
 .logo {
   color: white;
-  position: fixed;
+  position: absolute;
   top: -15px;
   left: -50px;
   font-weight: 300;

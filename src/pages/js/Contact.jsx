@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "../css/contact.css";
 import git from "../../../images/git.png";
 import fb from "../../../images/fb.png";
@@ -6,21 +6,102 @@ import upwork from "../../../images/upwork.png";
 import whatsapp from "../../../images/whatsapp.png";
 import { motion } from "framer-motion";
 import { useSnackbar } from "notistack";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { enqueueSnackbar } = useSnackbar();
   const [isHovered, setIsHovered] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const form = useRef();
+  const [data, setData] = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .sendForm("service_4otrg0k", "template_zndub6c", form.current, {
+        publicKey: "GkdjZsqUWCvmUMxhw",
+      })
+      .then(
+        () => {
+          enqueueSnackbar(
+            `Hi ${data.name}, Got your message! I'll reply you soon at ${data.email}.`,
+            {
+              variant: "success",
+            }
+          );
+          setLoading(false);
+          data = {
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          };
+        },
+        (error) => {
+          enqueueSnackbar("Something went wrong", {
+            variant: "error",
+          });
+
+          setLoading(false);
+
+          setData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        }
+      );
+  };
 
   return (
     <div className="contactPage">
       <h1>Contact Me</h1>
       <div className="contactDetails">
-        <div className="FormDiv">
-          <input className="email" placeholder="Your Email" />
-          <input className="Heading" placeholder="Subject" />
-          <textarea className="message" placeholder="Message" />
-          <button>Submit</button>
-        </div>
+        <form className="FormDiv" ref={form} onSubmit={sendEmail}>
+          <input
+            className="email"
+            placeholder="Name"
+            name="user_name"
+            value={data.name}
+            onChange={(e) => {
+              setData({ ...data, name: e.target.value });
+            }}
+          />
+          <input
+            className="Heading"
+            placeholder="Email"
+            value={data.email}
+            name="user_email"
+            onChange={(e) => {
+              setData({ ...data, email: e.target.value });
+            }}
+          />
+          <input
+            className="Heading"
+            placeholder="Subject"
+            name="subject"
+            value={data.subject}
+            onChange={(e) => {
+              setData({ ...data, subject: e.target.value });
+            }}
+          />
+          <textarea
+            className="message"
+            placeholder="Message"
+            name="message"
+            value={data.message}
+            onChange={(e) => {
+              setData({ ...data, message: e.target.value });
+            }}
+          />
+          <button>{loading ? "sending..." : "Send"}</button>
+        </form>
         <div className="textDiv">
           <h1>Contact info :</h1>
           <div className="contactinfoDetails">

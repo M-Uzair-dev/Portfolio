@@ -63,6 +63,10 @@
 .linksDiv > p {
   margin: 10px 0;
   cursor: pointer;
+  transition: 0.4s all ease;
+}
+.linksDiv > p:hover {
+  scale: 1.1;
 }
 .footerRightDiv > button {
   padding: 12px 25px;
@@ -75,8 +79,13 @@
   font-size: 19px;
   font-weight: 300;
   z-index: 2000;
+  cursor: pointer;
+}
+.footerRightDiv > button:hover > img {
+  margin-left: 25px;
 }
 .footerRightDiv > button > img {
+  transition: 0.4s all ease !important;
   max-height: 25px;
   transform: rotate(-90deg);
   filter: brightness(10000%);
