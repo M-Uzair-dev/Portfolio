@@ -35,12 +35,12 @@ const Contact = () => {
             }
           );
           setLoading(false);
-          data = {
+          setData({
             name: "",
             email: "",
             subject: "",
             message: "",
-          };
+          });
         },
         (error) => {
           enqueueSnackbar("Something went wrong", {
