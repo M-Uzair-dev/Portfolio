@@ -18,12 +18,7 @@ const Contact = () => {
     email: "",
     subject: "",
     message: "",
-  });
-  function validEmail(text) {
-    const emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/;
-
-    return emailPattern.test(text);
-  }
+  };
   const sendEmail = (e) => {
     e.preventDefault();
     if (!data.name) {
