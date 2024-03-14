@@ -13,50 +13,77 @@ const Contact = () => {
   const [isHovered, setIsHovered] = useState(0);
   const [loading, setLoading] = useState(false);
   const form = useRef();
-  const [data, setData] = {
+  const [data, setData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
-  };
+  });
+  function validEmail(text) {
+    const emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/;
+
+    return emailPattern.test(text);
+  }
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true);
-    emailjs
-      .sendForm("service_4otrg0k", "template_zndub6c", form.current, {
-        publicKey: "GkdjZsqUWCvmUMxhw",
-      })
-      .then(
-        () => {
-          enqueueSnackbar(
-            `Hi ${data.name}, Got your message! I'll reply you soon at ${data.email}.`,
-            {
-              variant: "success",
-            }
-          );
-          setLoading(false);
-          setData({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
-        },
-        (error) => {
-          enqueueSnackbar("Something went wrong", {
-            variant: "error",
-          });
+    if (!data.name) {
+      enqueueSnackbar("Please enter your name", {
+        variant: "error",
+      });
+    } else if (!data.email) {
+      enqueueSnackbar("Please enter your email", {
+        variant: "error",
+      });
+    } else if (!data.subject) {
+      enqueueSnackbar("Please enter your subject", {
+        variant: "error",
+      });
+    } else if (!data.message) {
+      enqueueSnackbar("Please enter your message", {
+        variant: "error",
+      });
+    } else if (!validEmail(data.email)) {
+      enqueueSnackbar("Please enter a valid email", {
+        variant: "error",
+      });
+    } else {
+      setLoading(true);
+      emailjs
+        .sendForm("service_4otrg0k", "template_zndub6c", form.current, {
+          publicKey: "GkdjZsqUWCvmUMxhw",
+        })
+        .then(
+          () => {
+            enqueueSnackbar(
+              `Hi ${data.name}, Got your message! I'll reply you soon at ${data.email}.`,
+              {
+                variant: "success",
+              }
+            );
+            setLoading(false);
+            setData({
+              name: "",
+              email: "",
+              subject: "",
+              message: "",
+            });
+          },
+          (error) => {
+            enqueueSnackbar("Something went wrong", {
+              variant: "error",
+            });
 
-          setLoading(false);
+            setLoading(false);
 
-          setData({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
-        }
-      );
+            setData({
+              name: "",
+              email: "",
+              subject: "",
+              message: "",
+            });
+          }
+        );
+    }
   };
 
   return (
@@ -247,22 +274,19 @@ const Contact = () => {
           <div className="socialicons">
             <img
               onClick={() => {
-                window.open("https://github.com/M-Uzair-dev");
+                window.open("http://wa.me/+923168067371");
               }}
               src={whatsapp}
             />
             <img
               onClick={() => {
-                window.open("https://github.com/M-Uzair-dev");
+                window.open(
+                  "https://www.facebook.com/profile.php?id=61550838426849&mibextid=ZbWKwL"
+                );
               }}
               src={fb}
             />
-            <img
-              onClick={() => {
-                window.open("https://github.com/M-Uzair-dev");
-              }}
-              src={upwork}
-            />
+            <img src={upwork} />
             <img
               onClick={() => {
                 window.open("https://github.com/M-Uzair-dev");

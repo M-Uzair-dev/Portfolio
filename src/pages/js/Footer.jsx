@@ -16,15 +16,57 @@ const Footer = () => {
         <p>
           The website was created by Uzair Manan. You can find more information
           about me on my social media. Feel free to contact me through{" "}
-          <span>WhatsApp</span> or <span>Facebook</span>. You can view all my
-          project codes and history on my <span>GitHub</span>. And for project
-          discussions, you can reach me through <span>Upwork</span>.
+          <span
+            onClick={() => {
+              window.open("http://wa.me/+923168067371");
+            }}
+          >
+            WhatsApp
+          </span>{" "}
+          or{" "}
+          <span
+            onClick={() => {
+              window.open(
+                "https://www.facebook.com/profile.php?id=61550838426849&mibextid=ZbWKwL"
+              );
+            }}
+          >
+            Facebook
+          </span>
+          . You can view all my project codes and history on my{" "}
+          <span
+            onClick={() => {
+              window.open("https://github.com/M-Uzair-dev");
+            }}
+          >
+            GitHub
+          </span>
+          . And for project discussions, you can reach me through{" "}
+          <span>Upwork</span>.
         </p>
         <div className="imagesDiv" data-scroll data-scroll-speed="-0.1">
-          <img src={whatsapp} />
-          <img src={fb} />
+          <img
+            src={whatsapp}
+            onClick={() => {
+              window.open("http://wa.me/+923168067371");
+            }}
+          />
+          <img
+            src={fb}
+            onClick={() => {
+              window.open(
+                "https://www.facebook.com/profile.php?id=61550838426849&mibextid=ZbWKwL"
+              );
+            }}
+          />
           <img src={upwork} />
-          <img src={git} style={{ filter: "invert(1)" }} />
+          <img
+            src={git}
+            onClick={() => {
+              window.open("https://github.com/M-Uzair-dev");
+            }}
+            style={{ filter: "invert(1)" }}
+          />
         </div>
       </div>
       <div className="footerRightDiv">
