@@ -13,12 +13,12 @@ const Contact = () => {
   const [isHovered, setIsHovered] = useState(0);
   const [loading, setLoading] = useState(false);
   const form = useRef();
-  const [data, setData] = {
+  const [data, setData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
-  };
+  });
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
