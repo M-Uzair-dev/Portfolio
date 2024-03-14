@@ -13,7 +13,7 @@ const ProjectDetails = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     return () => {};
-  }, [projectName]);
+  }, []);
 
   const navigate = useNavigate();
   return (
