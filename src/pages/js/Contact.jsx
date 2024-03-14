@@ -18,7 +18,7 @@ const Contact = () => {
     email: "",
     subject: "",
     message: "",
-  };
+  });
   const sendEmail = (e) => {
     e.preventDefault();
     if (!data.name) {
