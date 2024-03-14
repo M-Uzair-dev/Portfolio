@@ -5,9 +5,12 @@ import fb from "../../../images/fb.png";
 import upwork from "../../../images/upwork.png";
 import whatsapp from "../../../images/whatsapp.png";
 import { motion } from "framer-motion";
+import { useSnackbar } from "notistack";
 
 const Contact = () => {
+  const { enqueueSnackbar } = useSnackbar();
   const [isHovered, setIsHovered] = useState(0);
+
   return (
     <div className="contactPage">
       <h1>Contact Me</h1>
@@ -39,6 +42,12 @@ const Contact = () => {
                         }`}
                         onMouseEnter={() => setIsHovered(1)}
                         onMouseLeave={() => setIsHovered(0)}
+                        onClick={() => {
+                          navigator.clipboard.writeText("Uzair Manan");
+                          enqueueSnackbar("Text copied !", {
+                            variant: "success",
+                          });
+                        }}
                       >
                         <p>
                           <span>U</span>
@@ -71,6 +80,14 @@ const Contact = () => {
                         }`}
                         onMouseEnter={() => setIsHovered(2)}
                         onMouseLeave={() => setIsHovered(0)}
+                        onClick={() => {
+                          navigator.clipboard.writeText(
+                            "uzairmanan3@gmail.com"
+                          );
+                          enqueueSnackbar("Text copied !", {
+                            variant: "success",
+                          });
+                        }}
                       >
                         <span>u</span>
                         <span>z</span>
@@ -112,6 +129,12 @@ const Contact = () => {
                         }`}
                         onMouseEnter={() => setIsHovered(3)}
                         onMouseLeave={() => setIsHovered(0)}
+                        onClick={() => {
+                          navigator.clipboard.writeText("+92 316 8067371");
+                          enqueueSnackbar("Text copied !", {
+                            variant: "success",
+                          });
+                        }}
                       >
                         <p>
                           <span>+</span>
@@ -141,10 +164,31 @@ const Contact = () => {
             })}
           </div>
           <div className="socialicons">
-            <img src={whatsapp} />
-            <img src={fb} />
-            <img src={upwork} />
-            <img src={git} style={{ filter: "invert(1)" }} />
+            <img
+              onClick={() => {
+                window.open("https://github.com/M-Uzair-dev");
+              }}
+              src={whatsapp}
+            />
+            <img
+              onClick={() => {
+                window.open("https://github.com/M-Uzair-dev");
+              }}
+              src={fb}
+            />
+            <img
+              onClick={() => {
+                window.open("https://github.com/M-Uzair-dev");
+              }}
+              src={upwork}
+            />
+            <img
+              onClick={() => {
+                window.open("https://github.com/M-Uzair-dev");
+              }}
+              src={git}
+              style={{ filter: "invert(1)" }}
+            />
           </div>
         </div>
       </div>

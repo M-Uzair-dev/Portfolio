@@ -9,7 +9,8 @@ import Skills from "./pages/js/Skills";
 import Projects from "./pages/js/Projects";
 import Contact from "./pages/js/Contact";
 import Footer from "./pages/js/Footer";
-import { Link, Element, animateScroll as scroll } from "react-scroll";
+import { Element } from "react-scroll";
+import { SnackbarProvider } from "notistack";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -24,35 +25,37 @@ function App() {
   });
   return (
     <>
-      <div className="mainframe">
-        <Loading />
+      <SnackbarProvider maxSnack={3}>
+        <div className="mainframe">
+          <Loading />
 
-        <Element name="HOME">
-          <Mainpage />
-        </Element>
-        <div className="nav">
-          <Sidebar />
-          <div className="logo">
-            <img src={logo} alt="logo" />
+          <Element name="HOME">
+            <Mainpage />
+          </Element>
+          <div className="nav">
+            <Sidebar />
+            <div className="logo">
+              <img src={logo} alt="logo" />
+            </div>
           </div>
+          <Element name="ABOUT">
+            <About />
+          </Element>
+
+          <Element name="SKILLS">
+            <Skills />
+          </Element>
+
+          <Element name="PROJECTS">
+            <Projects />
+          </Element>
+
+          <Element name="CONTACT">
+            <Contact />
+          </Element>
+          <Footer />
         </div>
-        <Element name="ABOUT">
-          <About />
-        </Element>
-
-        <Element name="SKILLS">
-          <Skills />
-        </Element>
-
-        <Element name="PROJECTS">
-          <Projects />
-        </Element>
-
-        <Element name="CONTACT">
-          <Contact />
-        </Element>
-        <Footer />
-      </div>
+      </SnackbarProvider>
     </>
   );
 }

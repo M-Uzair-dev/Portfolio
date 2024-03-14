@@ -207,7 +207,7 @@ const ProjectDetails = () => {
         ) : projectName === "textguard" ? (
           <>
             <>
-              <div className="image">
+              <div className="imageinProjectDetails">
                 <img src={textguard} />{" "}
               </div>
               <div className="textinProjectDetails">
