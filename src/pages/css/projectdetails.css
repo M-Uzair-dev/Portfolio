@@ -15,7 +15,6 @@
 .imageinProjectDetails {
   width: 90%;
   margin: 50px auto;
-  border-radius: 50px;
   overflow: hidden;
   height: max-content;
   display: flex;
@@ -90,6 +89,9 @@
   z-index: 10000000;
 }
 @media (max-width: 600px) {
+.imageinProjectDetails > img {
+  border-radius: 10px !important;
+}
   .projectDetails h1 {
     font-size: 23px;
     margin: 10px 0 !important;
