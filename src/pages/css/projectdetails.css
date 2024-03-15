@@ -95,6 +95,7 @@
   }
   .projectDetails p {
     font-size: 16px;
+    font-weight: 300;
   }
   .projectDetails li {
     list-style: disc;
